@@ -1,0 +1,619 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: c;
+    src: url("./Fonts/tahoma.ttf");
+}
+.Navbar {
+    @apply w-full flex justify-between px-20 py-3 items-center bg-[#111]/70 font-black  fixed;
+    backdrop-filter: blur(5px);    
+    font-family: c;
+}
+.Left-Nav , .Right-Nav{
+    @apply w-1/2 p-[5px] px-[15px] text-[#ffb80e] font-bold
+}
+
+.Nav-List{
+    @apply w-full flex flex-row-reverse justify-between
+}
+.Right-Nav {
+ @apply flex justify-end
+}
+.Header {
+    background: url("http://scriptscenter.ir/wordpress/mahoor/wp-content/uploads/2019/08/banner6.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @apply flex justify-center flex-col items-center bg-[#000]/70 text-[#fdfdfd] font-bold;
+}
+.HeaderTitle {
+ @apply my-3 text-[25px]
+}
+.HeaderTopic {
+    @apply my-2  text-[45px]
+}
+.HeaderDes {
+@apply my-3    font-light text-[18px] 
+}
+.Buttons {
+@apply flex flex-row-reverse my-4
+
+}
+.headerBtn {
+    @apply mx-[5px] bg-[#ffb80e] px-[35px] py-[10px] rounded-full text-[14px] relative z-10 text-[#fff];
+    font-family: sans-serif; 
+    transition: all 0.5s ease-in-out;
+     overflow: hidden;
+
+}
+.headerBtn::after{
+    content: " ";
+    @apply  absolute w-0 left-0 bottom-0  bg-[#fff] h-[50px] ;
+    transition: all 0.5s ease-in-out;
+ z-index: -1;
+}
+.headerBtn:hover{
+    @apply text-[#111]
+}
+.headerBtn:hover::after{
+    @apply w-full
+}
+.specialbtn{
+    @apply bg-transparent border
+}
+
+
+
+/* section1 */
+.top{
+    @apply flex w-[1200px] m-auto flex-col mt-20 px-[2rem]  justify-start; 
+    text-align: right;
+}
+.orange{
+    background-color: #ffb80e;
+
+}
+.header-wel{
+    @apply text-[35px] border-r-[3px] border-[#ffb80e] pr-1 my-2 font-bold;
+}
+.text-wel{
+    @apply text-[#666]/90 text-right font-light;
+    margin: 0 0 70px 28%; 
+
+}
+.icon{
+    @apply w-[15%] m-auto mb-5
+    ;
+    color: #ffb80e;
+    font-size: 35px;
+}
+.container{
+    @apply flex flex-row-reverse  mt-3 w-[80%] m-auto pb-20 ;
+    text-align: right;
+
+}
+.col-section{
+    @apply flex flex-col mx-6 ;
+}
+.h-col{
+@apply text-[20px] flex justify-center;
+
+}
+.p-col{
+@apply text-[#abaaaa] text-[13px] mt-3 text-center
+}
+/* end section1 */
+/* section2 */
+.inivation{
+    @apply w-full bg-[#eeeded] flex flex-row-reverse  pb-10;
+    text-align: right;
+}
+.img{
+    @apply w-[50%]
+}
+.text-part2{
+    @apply w-[40%] flex flex-col m-auto
+}
+.text-inivation{
+    @apply text-orange-400 text-[25px];
+
+}
+.text-stra{
+  @apply text-[50px];
+}
+.text-lorem{
+@apply text-[15px] text-[#afaeae] my-1
+}
+.text-item{
+@apply text-[15px] text-[#a4a4a4] my-1
+}
+/* end section 2 */
+/* section3 */
+.about{
+    @apply flex flex-col mt-20 mr-36 mb-10;
+    text-align: right;
+}
+.header-about{
+    @apply font-bold text-[25px] border-r-[3px] pr-1;
+    border-color: #ffb80e;
+
+}
+.text-about{
+    @apply text-[#a4a4a4] text-[15px] ;
+    margin: 8px 0 70px 60%; 
+
+}
+/* end section 3 */
+/* continue section3 */
+.company{
+    @apply flex w-[80%] m-auto pb-24;
+    text-align: right;
+}
+.company-img{
+    @apply w-[50%]
+}
+.text-company{
+    @apply w-[50%]
+}
+.header-company{
+    @apply font-bold text-[29px]
+}
+.text-c{
+    @apply text-[13px] text-[#a4a4a4] my-3 ml-5 text-right
+}
+/* finish section 3 */
+/* section4 */
+.dark{
+    @apply flex h-[330px] w-full bg-[#212529] mb-16;
+    background-image: url("http://scriptscenter.ir/wordpress/mahoor/wp-content/uploads/2019/08/282-pom1674-nam-id-388115-jpeg.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position:top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.dark-item{
+    @apply flex flex-col text-center mx-28
+}
+.dark-icons{
+    @apply flex flex-row-reverse ;
+    align-items: center;
+    margin: auto;
+}
+.icon-dark{
+    color: #ffb80e;
+    font-size: 35px;
+}
+.number ,.text-dark{
+    @apply text-[#a4a4a4] text-[25px]
+}
+.number{
+    @apply font-bold mt-3 text-[#fff] mb-1
+}
+/* section4 */
+
+/* section5 */
+.team{
+    @apply flex flex-col mt-20 mr-36 mb-10;
+    text-align: right;
+}
+.team-header{
+    @apply font-bold text-[30px] border-r-[3px] pr-3;
+    border-color: #ffb80e;
+
+}
+.team-text{
+    @apply text-[#a4a4a4] text-[15px] ;
+    margin: 8px 0 70px 60%; 
+
+}
+.team-member{
+    @apply flex flex-row-reverse items-center w-[80%] m-auto;
+    
+}
+.member-items{
+    @apply flex flex-col text-center mx-3 mb-20
+}
+.name ,.job{
+    @apply text-[15px] text-[#a4a4a4]
+}
+.name{
+   @apply text-black text-[20px] font-bold mt-3 mb-1
+}
+/* section 5 */
+/* section6 */
+.skill{
+    @apply flex flex-row-reverse bg-[#eeeded] text-right w-full h-[550px] mb-10 items-center
+}
+.skill-texts{
+    @apply w-[35%] m-auto text-right
+}
+.skill-text{
+    @apply text-[#a4a4a4] text-[13px] my-3 
+}
+.bar-text{
+    @apply text-black text-[19px]
+}
+.skill-img{
+    @apply w-[35%] m-auto
+}
+
+.skill-header{
+    @apply font-bold text-[35px]
+}
+.bar1,.bar2,.bar3,.bar4{
+@apply flex  w-[100%] h-[10px] bg-white my-3 ;
+border:1px solid #fff;
+border-radius: 50px;
+}
+.bar1::after{
+    content: "85%";
+    @apply bg-[#ffb80e] w-[85%] 
+}
+.bar2::after{
+    content: "95%";
+    @apply bg-[#ffb80e] w-[95%] 
+}
+.bar3::after{
+    content: "70%";
+    @apply bg-[#ffb80e] w-[70%] 
+}
+.bar4::after{
+    content: "75%";
+    @apply bg-[#ffb80e] w-[75%]
+ 
+}
+/* section6 */
+/* section7 */
+.question{
+@apply flex flex-col w-[45%] my-16 pl-32 ;
+text-align:right;
+}
+.question-span{
+    @apply text-[15px] text-[#ffb80e] my-1
+
+}
+.question-header{
+    @apply font-bold text-[28px] my-3
+}
+
+.paragragh-question{
+@apply text-[12px] text-[#a4a4a4]  my-1
+}
+.q-header{
+@apply text-[20px] text-[#ffb80e] font-bold my-3
+}
+.p-question{
+@apply bg-[#eeeded] text-[#a4a4a4] text-[12px] my-3;
+line-height: 2;
+}
+.text-question{
+@apply font-bold text-[18px] my-1 
+}
+/* section7 */
+/* section8 */
+.services{
+@apply flex flex-col 
+}
+.service-header{
+    @apply flex flex-col mt-20 mr-36 mb-10;
+    text-align: right;
+}
+.s-header{
+    @apply font-bold text-[30px] border-r-[3px] pr-3;
+    border-color: #ffb80e;
+}
+.s-text{
+    @apply text-[#a4a4a4] text-[15px] ;
+    margin: 8px 0 70px 60%;
+}
+.rows-services{
+    @apply flex flex-col w-[80%] m-auto;
+}
+.row-s1 ,.row-s2{
+    @apply flex flex-row-reverse mb-10
+
+}
+.row-items{
+@apply flex flex-col text-center items-center mx-3 my-3 p-12  ;
+box-shadow: 0px 5px 35px -7px #ccc;
+border: 2px solid transparent;
+}
+.row-items:hover{
+    border: 2px solid #ffb80e;
+        transition: 0.2s ease-in-out;
+  
+}
+.icon-row{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    font-size: 35px;
+    color: black;
+    height: 70px;
+    width: 70px;
+    line-height:2;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.icon-row:hover{
+    background-color: #ffb80e;
+    color:white;
+        transition: 0.2s ease-in-out;
+}
+.row-header{
+@apply text-[15px] font-bold my-3
+}
+.row-text{
+@apply text-[#a4a4a4] text-[13px]
+}
+
+
+/* section8 */
+/* section9 */
+.speak{
+    @apply h-[400px] my-16 flex flex-col;
+    background-image: url('http://scriptscenter.ir/wordpress/mahoor/wp-content/uploads/2019/08/pexels-photo-792778.jpg');
+    background-attachment: scroll;
+    background-color: #212529;
+    background-blend-mode: darken;
+    background-position: bottom;
+    background-size: cover;
+}
+.speak-text{
+    @apply flex text-center items-center w-[40%] m-auto flex-col
+}
+.t-speak{
+    @apply  text-[white] text-[20px] my-3
+}
+.name-speak{
+    @apply text-[#ffb80e] text-[20px] font-bold mt-3
+}
+.company-speak{
+    @apply text-[#a4a4a4] text-[20px]  font-bold
+}
+/* section9 */
+/* section10 */
+.case{
+@apply flex flex-col w-[80%] m-auto
+}
+.case-texts{
+    @apply flex flex-col;
+    text-align: right;
+
+}
+.case-text{
+    @apply font-bold text-[25px] border-r-[3px] pr-3;
+    border-color: #ffb80e;
+}
+.case-paragragh{
+    @apply text-[#a4a4a4] text-[15px] ;
+    margin: 8px 0 70px 50%;
+}
+.case-btns{
+@apply flex flex-row-reverse m-auto mb-10;
+
+}
+.case-btn{
+@apply mx-5 items-center bg-[#e7e6e6] text-[12px]  ;
+border: 1px solid #ccc;
+border-radius:25px;
+padding: 9px 20px ;
+
+}
+.case-images{
+@apply flex flex-col mb-20
+}
+.case-img1,.case-img2{
+@apply flex flex-row
+}
+.case1{
+    @apply w-[30%] h-[330px] 
+}
+.case2{
+    @apply w-[30%] h-[430px] mx-10
+
+}
+.case3{
+    @apply w-[30%] h-[480px]
+
+}
+.case4{
+    @apply w-[30%] h-[400px];
+    margin-top: -110px;
+
+}
+.case5{
+    @apply w-[30%] h-[315px] mx-10
+    ;
+    margin-top: -25px;
+
+}
+.case6{
+    @apply w-[30%] h-[270px] mt-5;
+
+}
+/* section10 */
+/* section11 */
+.rafati{
+@apply flex flex-col h-[280px]  mb-16  ;
+background-image: url("http://scriptscenter.ir/wordpress/mahoor/wp-content/uploads/2019/08/felix.jpg");
+background-color: #212529;
+background-blend-mode: darken;
+background-position: top;
+}
+.rafati-texts{
+    @apply w-[65%] m-auto flex flex-col items-center
+}
+.rafati-icon{
+font-size: 30px;
+color: #ffb80e;
+}
+.name-rafati{
+    @apply text-white text-[20px] font-bold mt-5
+}
+.rafati-text{
+@apply text-[#a4a4a4] text-[13px] mt-5
+}
+.job-rafati{
+    @apply text-[#ffb80e] text-[13px] 
+}
+
+/* section11 */
+/* section12 */
+.blog{
+@apply w-[85%] m-auto  flex flex-col pb-20; 
+}
+.blog-texts{
+    @apply flex flex-col;
+    text-align: right;
+}
+.blog-header{
+    @apply font-bold text-[25px] border-r-[3px] pr-3;
+    border-color: #ffb80e;
+}
+.blog-paragragh{
+    @apply text-[#a4a4a4] text-[15px] ;
+    margin: 8px 0 70px 50%;
+}
+.blog-cards{
+    @apply flex flex-row-reverse 
+}
+.card{
+    @apply flex flex-col mx-3 h-auto ;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16) ,
+    0 2px 10px 0 rgba(0,0,0,.12);
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+}
+.card-img{
+@apply mb-5
+}
+.card-img:hover{
+    /* transform: scale(2,2); */
+    transition: 0.4s ease-in-out;
+}
+.card-body{
+    @apply px-5;
+text-align: right;
+}
+.card-header{
+    @apply text-[15px] font-bold mb-1
+
+}
+.card-text{
+    @apply text-[#a4a4a4] text-[12px] pb-10 pt-5 
+
+}
+.blog-btns{
+@apply flex items-center  justify-center my-10   ;
+}
+
+.btn-b{
+@apply bg-[#ffb80e] text-white rounded-full px-[13px] py-1 text-[13px];
+transition: all 0.5s ease-in-out;
+overflow: hidden;
+
+}
+.btn-b:hover{
+    content: "";
+    border: 1px solid #ffb80e;
+    transform: translateX(15px);
+    @apply bg-white text-[#ffb80e] rounded-full  ;
+}
+/* section12 */
+/* section13 */
+.contact{
+@apply flex flex-col w-[85%] m-auto pb-16;
+}
+.contact-texts{
+    @apply flex flex-col;
+    text-align: right;
+}
+.contact-header{
+    @apply font-bold text-[25px] border-r-[3px] pr-3;
+    border-color: #ffb80e;
+}
+.contact-text{
+    @apply text-[#a4a4a4] text-[15px] ;
+    margin: 8px 0 70px 50%;
+}
+.contact-rows{
+@apply flex flex-row-reverse 
+}
+.contact-items{
+@apply flex flex-col my-5 ;
+text-align: right;
+}
+.contact-num,.contact-location,.contact-email{
+@apply flex flex-row-reverse my-5 items-center;
+}
+.num,.location,.address{
+@apply text-[#a4a4a4] text-[13px] text-center mx-3
+}
+.contact-icon{
+    @apply bg-[#f4efef] rounded-full p-3;
+    font-size: 25px;
+    color: #ffb80e;
+}
+.contact-info{
+@apply flex flex-col items-center m-auto  
+}
+.first{
+@apply flex flex-row-reverse  
+}
+.contact-name{
+@apply text-[#ccc] pr-12 pl-3;
+border: 1px solid #ccc;
+}
+.contact-em{
+    @apply text-[#ccc] pr-36 pl-3 mr-3;
+    border: 1px solid #ccc;
+}
+.second{
+@apply flex flex-col mt-5
+}
+.subject{
+    @apply text-[#ccc] pr-96 pl-3 mr-5 py-3;
+    border: 1px solid #ccc;
+}
+.massege{
+    @apply text-[#ccc] pr-96 pl-3 mr-5 py-3 mt-5;
+    border: 1px solid #ccc;
+}
+.contact-btn{
+    @apply flex items-start ml-64;
+}
+.sent{
+@apply bg-[#ffb80e] text-white text-[13px] rounded-full px-5 py-1
+}
+.sent:hover{
+    @apply text-[#ffb80e]
+}
+/* section13 */
+/* footer */
+.footer{
+@apply w-full bg-black items-center justify-center h-[150px]
+}
+.footer-items{
+@apply flex flex-col justify-center items-center
+}
+.footer-img{
+    margin-top: 15px;
+  }
+.footer-icons{
+    @apply flex flex-row-reverse;
+    margin-top: 17px;
+
+}
+.footer-icon{
+font-size: 15px;
+color: #e1e1e1;
+background-color: transparent;
+border: 1px solid #e1e1e1;
+@apply rounded-full mx-3 px-5 py-3;
+}
+/* footer */
